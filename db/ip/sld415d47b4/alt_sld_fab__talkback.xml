@@ -11,7 +11,7 @@
    <SOPCModuleParameter>
     <C>2</C>
     <Name>DESIGN_HASH</Name>
-    <Value>10d262fb068ed2c050db</Value>
+    <Value>417a5440bddcbdc28bf5</Value>
    </SOPCModuleParameter>
    <SOPCModuleParameter>
     <C>3</C>
@@ -41,7 +41,7 @@
    <SOPCModuleParameter>
     <C>8</C>
     <Name>EP_INFOS</Name>
-    <Value>{hpath {arqt1_jtag_uart_0:jtag_uart_0|alt_jtag_atlantic:arqt1_jtag_uart_0_alt_jtag_atlantic|altera_sld_agent_endpoint:inst|altera_fabric_endpoint:ep} } {hpath {arqt1_nios2_gen2_0:nios2_gen2_0|arqt1_nios2_gen2_0_cpu:cpu|arqt1_nios2_gen2_0_cpu_nios2_oci:the_arqt1_nios2_gen2_0_cpu_nios2_oci|arqt1_nios2_gen2_0_cpu_debug_slave_wrapper:the_arqt1_nios2_gen2_0_cpu_debug_slave_wrapper|sld_virtual_jtag_basic:arqt1_nios2_gen2_0_cpu_debug_slave_phy|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst} } </Value>
+    <Value>{hpath {arqte1_jtag_uart_0:jtag_uart_0|alt_jtag_atlantic:arqte1_jtag_uart_0_alt_jtag_atlantic|altera_sld_agent_endpoint:inst|altera_fabric_endpoint:ep} } {hpath {arqte1_nios2_gen2_0:nios2_gen2_0|arqte1_nios2_gen2_0_cpu:cpu|arqte1_nios2_gen2_0_cpu_nios2_oci:the_arqte1_nios2_gen2_0_cpu_nios2_oci|arqte1_nios2_gen2_0_cpu_debug_slave_wrapper:the_arqte1_nios2_gen2_0_cpu_debug_slave_wrapper|sld_virtual_jtag_basic:arqte1_nios2_gen2_0_cpu_debug_slave_phy|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst} } </Value>
    </SOPCModuleParameter>
    <SOPCModuleParameter>
     <C>9</C>
@@ -69,7 +69,7 @@
     <Value>Unknown</Value>
    </SOPCModuleParameter>
   </SOPCModule>
-  <SystemID>1598966936</SystemID>
+  <SystemID>1763236468</SystemID>
  </SOPCSystem>
  <SchemaVersion>schema_2013-01-18</SchemaVersion>
 </ProgramExecution>

@@ -1,6 +1,6 @@
 Flow report for Problema1
-Tue Apr 02 15:28:49 2019
-Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
+Thu Apr 04 13:06:26 2019
+Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 Patches 0.01we SJ Web Edition
 
 
 ---------------------
@@ -38,26 +38,26 @@ agreement for further details.
 
 
 
-+---------------------------------------------------------------------------------+
-; Flow Summary                                                                    ;
-+------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Tue Apr 02 15:28:49 2019      ;
-; Quartus II 64-Bit Version          ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
-; Revision Name                      ; Problema1                                  ;
-; Top-level Entity Name              ; arqt1                                      ;
-; Family                             ; Cyclone IV E                               ;
-; Device                             ; EP4CE6E22C8                                ;
-; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 1,650 / 6,272 ( 26 % )                     ;
-;     Total combinational functions  ; 1,537 / 6,272 ( 25 % )                     ;
-;     Dedicated logic registers      ; 902 / 6,272 ( 14 % )                       ;
-; Total registers                    ; 902                                        ;
-; Total pins                         ; 20 / 92 ( 22 % )                           ;
-; Total virtual pins                 ; 0                                          ;
-; Total memory bits                  ; 76,832 / 276,480 ( 28 % )                  ;
-; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                             ;
-; Total PLLs                         ; 0 / 2 ( 0 % )                              ;
-+------------------------------------+--------------------------------------------+
++------------------------------------------------------------------------------------------------+
+; Flow Summary                                                                                   ;
++------------------------------------+-----------------------------------------------------------+
+; Flow Status                        ; Successful - Thu Apr 04 13:06:26 2019                     ;
+; Quartus II 64-Bit Version          ; 15.0.0 Build 145 04/22/2015 Patches 0.01we SJ Web Edition ;
+; Revision Name                      ; Problema1                                                 ;
+; Top-level Entity Name              ; arqte1                                                    ;
+; Family                             ; Cyclone IV E                                              ;
+; Device                             ; EP4CE6E22C8                                               ;
+; Timing Models                      ; Final                                                     ;
+; Total logic elements               ; 1,678 / 6,272 ( 27 % )                                    ;
+;     Total combinational functions  ; 1,560 / 6,272 ( 25 % )                                    ;
+;     Dedicated logic registers      ; 911 / 6,272 ( 15 % )                                      ;
+; Total registers                    ; 911                                                       ;
+; Total pins                         ; 20 / 92 ( 22 % )                                          ;
+; Total virtual pins                 ; 0                                                         ;
+; Total memory bits                  ; 76,832 / 276,480 ( 28 % )                                 ;
+; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                                            ;
+; Total PLLs                         ; 0 / 2 ( 0 % )                                             ;
++------------------------------------+-----------------------------------------------------------+
 
 
 +-----------------------------------------+
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/02/2019 15:25:45 ;
+; Start date & time ; 04/04/2019 13:02:45 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Problema1           ;
 +-------------------+---------------------+
@@ -76,19 +76,19 @@ agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 110073158896957.155422954503592       ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 93181009264021.155439376529640        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                  ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --             ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                  ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                              ; --            ; arqt1       ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; arqt1       ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; arqt1       ; Top            ;
+; PARTITION_COLOR                     ; 16764057                              ; --            ; arqte1      ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; arqte1      ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; arqte1      ; Top            ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --            ; --          ; --             ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --             ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                          ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                    ; arqt1                                 ; Problema1     ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; arqte1                                ; Problema1     ; --          ; --             ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 
 
@@ -97,12 +97,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:01:55     ; 1.0                     ; 4961 MB             ; 00:03:24                           ;
-; Fitter                    ; 00:00:26     ; 1.2                     ; 5435 MB             ; 00:00:18                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 4771 MB             ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:08     ; 1.0                     ; 4878 MB             ; 00:00:05                           ;
-; EDA Netlist Writer        ; 00:00:07     ; 1.0                     ; 4763 MB             ; 00:00:05                           ;
-; Total                     ; 00:02:39     ; --                      ; --                  ; 00:03:54                           ;
+; Analysis & Synthesis      ; 00:02:45     ; 1.0                     ; 4958 MB             ; 00:03:47                           ;
+; Fitter                    ; 00:00:16     ; 1.4                     ; 5597 MB             ; 00:00:21                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 4763 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:08     ; 1.5                     ; 4879 MB             ; 00:00:08                           ;
+; EDA Netlist Writer        ; 00:00:06     ; 1.0                     ; 4755 MB             ; 00:00:04                           ;
+; Total                     ; 00:03:17     ; --                      ; --                  ; 00:04:22                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -111,11 +111,11 @@ agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; DESKTOP-3CE6R38  ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; DESKTOP-3CE6R38  ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; DESKTOP-3CE6R38  ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; DESKTOP-3CE6R38  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-3CE6R38  ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; DESKTOP-PQQL7I0  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; DESKTOP-PQQL7I0  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; DESKTOP-PQQL7I0  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-PQQL7I0  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-PQQL7I0  ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 

@@ -1,1 +1,1 @@
-set_global_assignment -name QIP_FILE [file join $::quartus(qip_path) arqte1/arqte1.qip]
+set_global_assignment -name QIP_FILE [file join $::quartus(qip_path) arqt/arqt.qip]

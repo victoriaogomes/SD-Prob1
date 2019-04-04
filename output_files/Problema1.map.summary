@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Thu Apr 04 13:05:31 2019
+Analysis & Synthesis Status : Successful - Thu Apr 04 13:27:03 2019
 Quartus II 64-Bit Version : 15.0.0 Build 145 04/22/2015 Patches 0.01we SJ Web Edition
 Revision Name : Problema1
-Top-level Entity Name : arqte1
+Top-level Entity Name : arqt
 Family : Cyclone IV E
-Total logic elements : 1,742
-    Total combinational functions : 1,556
+Total logic elements : 1,740
+    Total combinational functions : 1,554
     Dedicated logic registers : 919
 Total registers : 919
 Total pins : 20

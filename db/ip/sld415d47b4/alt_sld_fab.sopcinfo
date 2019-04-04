@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="alt_sld_fab" kind="alt_sld_fab" version="1.0" fabric="QSYS">
  <!-- Format version 15.0 145 (Future versions may contain additional information.) -->
- <!-- 2019.04.04.13:05:14 -->
+ <!-- 2019.04.04.13:26:51 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_DEVICE_FAMILY">
   <type>java.lang.String</type>
@@ -56,7 +56,7 @@
 the requested settings for a module instance. -->
   <parameter name="DESIGN_HASH">
    <type>java.lang.String</type>
-   <value>417a5440bddcbdc28bf5</value>
+   <value>a0a4304748f63513f882</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -104,7 +104,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="EP_INFOS">
    <type>java.lang.String</type>
-   <value>{hpath {arqte1_jtag_uart_0:jtag_uart_0|alt_jtag_atlantic:arqte1_jtag_uart_0_alt_jtag_atlantic|altera_sld_agent_endpoint:inst|altera_fabric_endpoint:ep} } {hpath {arqte1_nios2_gen2_0:nios2_gen2_0|arqte1_nios2_gen2_0_cpu:cpu|arqte1_nios2_gen2_0_cpu_nios2_oci:the_arqte1_nios2_gen2_0_cpu_nios2_oci|arqte1_nios2_gen2_0_cpu_debug_slave_wrapper:the_arqte1_nios2_gen2_0_cpu_debug_slave_wrapper|sld_virtual_jtag_basic:arqte1_nios2_gen2_0_cpu_debug_slave_phy|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst} } </value>
+   <value>{hpath {arqt_jtag_uart_0:jtag_uart_0|alt_jtag_atlantic:arqt_jtag_uart_0_alt_jtag_atlantic|altera_sld_agent_endpoint:inst|altera_fabric_endpoint:ep} } {hpath {arqt_nios2_gen2_0:nios2_gen2_0|arqt_nios2_gen2_0_cpu:cpu|arqt_nios2_gen2_0_cpu_nios2_oci:the_arqt_nios2_gen2_0_cpu_nios2_oci|arqt_nios2_gen2_0_cpu_debug_slave_wrapper:the_arqt_nios2_gen2_0_cpu_debug_slave_wrapper|sld_virtual_jtag_basic:arqt_nios2_gen2_0_cpu_debug_slave_phy|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst} } </value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -2157,7 +2157,7 @@ parameters are a RESULT of the module parameters. -->
 the requested settings for a module instance. -->
   <parameter name="DESIGN_HASH">
    <type>java.lang.String</type>
-   <value>417a5440bddcbdc28bf5</value>
+   <value>a0a4304748f63513f882</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>

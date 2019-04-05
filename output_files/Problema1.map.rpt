@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Problema1
-Thu Apr 04 13:27:03 2019
+Fri Apr 05 12:57:50 2019
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 Patches 0.01we SJ Web Edition
 
 
@@ -166,10 +166,9 @@ Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 Patches 0.01we SJ Web Edit
 158. Port Connectivity Checks: "arqt_nios2_gen2_0:nios2_gen2_0|arqt_nios2_gen2_0_cpu:cpu"
 159. Port Connectivity Checks: "arqt_jtag_uart_0:jtag_uart_0"
 160. Post-Synthesis Netlist Statistics for Top Partition
-161. Post-Synthesis Netlist Statistics for Partition sld_hub:auto_hub
-162. Elapsed Time Per Partition
-163. Analysis & Synthesis Messages
-164. Analysis & Synthesis Suppressed Messages
+161. Elapsed Time Per Partition
+162. Analysis & Synthesis Messages
+163. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -196,13 +195,13 @@ agreement for further details.
 +------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                                   ;
 +------------------------------------+-----------------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Apr 04 13:27:03 2019                     ;
+; Analysis & Synthesis Status        ; Successful - Fri Apr 05 12:57:50 2019                     ;
 ; Quartus II 64-Bit Version          ; 15.0.0 Build 145 04/22/2015 Patches 0.01we SJ Web Edition ;
 ; Revision Name                      ; Problema1                                                 ;
 ; Top-level Entity Name              ; arqt                                                      ;
 ; Family                             ; Cyclone IV E                                              ;
-; Total logic elements               ; 1,740                                                     ;
-;     Total combinational functions  ; 1,554                                                     ;
+; Total logic elements               ; 1,747                                                     ;
+;     Total combinational functions  ; 1,561                                                     ;
 ;     Dedicated logic registers      ; 919                                                       ;
 ; Total registers                    ; 919                                                       ;
 ; Total pins                         ; 20                                                        ;
@@ -414,16 +413,16 @@ agreement for further details.
 +---------------------------------------------+---------------+
 ; Resource                                    ; Usage         ;
 +---------------------------------------------+---------------+
-; Estimated Total logic elements              ; 1,740         ;
+; Estimated Total logic elements              ; 1,747         ;
 ;                                             ;               ;
-; Total combinational functions               ; 1554          ;
+; Total combinational functions               ; 1561          ;
 ; Logic element usage by number of LUT inputs ;               ;
-;     -- 4 input functions                    ; 821           ;
-;     -- 3 input functions                    ; 427           ;
-;     -- <=2 input functions                  ; 306           ;
+;     -- 4 input functions                    ; 827           ;
+;     -- 3 input functions                    ; 429           ;
+;     -- <=2 input functions                  ; 305           ;
 ;                                             ;               ;
 ; Logic elements by mode                      ;               ;
-;     -- normal mode                          ; 1446          ;
+;     -- normal mode                          ; 1453          ;
 ;     -- arithmetic mode                      ; 108           ;
 ;                                             ;               ;
 ; Total registers                             ; 919           ;
@@ -437,7 +436,7 @@ agreement for further details.
 ;                                             ;               ;
 ; Maximum fan-out node                        ; clk_clk~input ;
 ; Maximum fan-out                             ; 894           ;
-; Total fan-out                               ; 10399         ;
+; Total fan-out                               ; 10427         ;
 ; Average fan-out                             ; 3.90          ;
 +---------------------------------------------+---------------+
 
@@ -447,7 +446,7 @@ agreement for further details.
 +-----------------------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                            ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                                   ; Library Name ;
 +-----------------------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |arqt                                                                                                                 ; 1554 (1)          ; 919 (0)      ; 76832       ; 0            ; 0       ; 0         ; 20   ; 0            ; |arqt                                                                                                                                                                                                                                                                                                                                                                 ; arqt         ;
+; |arqt                                                                                                                 ; 1561 (1)          ; 919 (0)      ; 76832       ; 0            ; 0       ; 0         ; 20   ; 0            ; |arqt                                                                                                                                                                                                                                                                                                                                                                 ; arqt         ;
 ;    |altera_customins_slave_translator:nios2_gen2_0_custom_instruction_master_multi_slave_translator0|                 ; 4 (4)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |arqt|altera_customins_slave_translator:nios2_gen2_0_custom_instruction_master_multi_slave_translator0                                                                                                                                                                                                                                                                ; arqt         ;
 ;    |altera_reset_controller:rst_controller|                                                                           ; 6 (5)             ; 16 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |arqt|altera_reset_controller:rst_controller                                                                                                                                                                                                                                                                                                                          ; arqt         ;
 ;       |altera_reset_synchronizer:alt_rst_req_sync_uq1|                                                                ; 1 (1)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |arqt|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1                                                                                                                                                                                                                                                                           ; arqt         ;
@@ -478,7 +477,7 @@ agreement for further details.
 ;    |arqt_memoria:memoria|                                                                                             ; 1 (1)             ; 0 (0)        ; 65568       ; 0            ; 0       ; 0         ; 0    ; 0            ; |arqt|arqt_memoria:memoria                                                                                                                                                                                                                                                                                                                                            ; arqt         ;
 ;       |altsyncram:the_altsyncram|                                                                                     ; 0 (0)             ; 0 (0)        ; 65568       ; 0            ; 0       ; 0         ; 0    ; 0            ; |arqt|arqt_memoria:memoria|altsyncram:the_altsyncram                                                                                                                                                                                                                                                                                                                  ; work         ;
 ;          |altsyncram_qub1:auto_generated|                                                                             ; 0 (0)             ; 0 (0)        ; 65568       ; 0            ; 0       ; 0         ; 0    ; 0            ; |arqt|arqt_memoria:memoria|altsyncram:the_altsyncram|altsyncram_qub1:auto_generated                                                                                                                                                                                                                                                                                   ; work         ;
-;    |arqt_mm_interconnect_0:mm_interconnect_0|                                                                         ; 263 (0)           ; 109 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |arqt|arqt_mm_interconnect_0:mm_interconnect_0                                                                                                                                                                                                                                                                                                                        ; arqt         ;
+;    |arqt_mm_interconnect_0:mm_interconnect_0|                                                                         ; 268 (0)           ; 109 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |arqt|arqt_mm_interconnect_0:mm_interconnect_0                                                                                                                                                                                                                                                                                                                        ; arqt         ;
 ;       |altera_avalon_sc_fifo:entrada_s1_agent_rsp_fifo|                                                               ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |arqt|arqt_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:entrada_s1_agent_rsp_fifo                                                                                                                                                                                                                                                                        ; arqt         ;
 ;       |altera_avalon_sc_fifo:jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo|                                            ; 3 (3)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |arqt|arqt_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo                                                                                                                                                                                                                                                     ; arqt         ;
 ;       |altera_avalon_sc_fifo:memoria_s1_agent_rsp_fifo|                                                               ; 7 (7)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |arqt|arqt_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:memoria_s1_agent_rsp_fifo                                                                                                                                                                                                                                                                        ; arqt         ;
@@ -502,12 +501,12 @@ agreement for further details.
 ;          |altera_merlin_arbitrator:arb|                                                                               ; 4 (4)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |arqt|arqt_mm_interconnect_0:mm_interconnect_0|arqt_mm_interconnect_0_cmd_mux_002:cmd_mux_002|altera_merlin_arbitrator:arb                                                                                                                                                                                                                                            ; arqt         ;
 ;       |arqt_mm_interconnect_0_cmd_mux_002:cmd_mux_004|                                                                ; 58 (53)           ; 5 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |arqt|arqt_mm_interconnect_0:mm_interconnect_0|arqt_mm_interconnect_0_cmd_mux_002:cmd_mux_004                                                                                                                                                                                                                                                                         ; arqt         ;
 ;          |altera_merlin_arbitrator:arb|                                                                               ; 5 (5)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |arqt|arqt_mm_interconnect_0:mm_interconnect_0|arqt_mm_interconnect_0_cmd_mux_002:cmd_mux_004|altera_merlin_arbitrator:arb                                                                                                                                                                                                                                            ; arqt         ;
-;       |arqt_mm_interconnect_0_router:router|                                                                          ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |arqt|arqt_mm_interconnect_0:mm_interconnect_0|arqt_mm_interconnect_0_router:router                                                                                                                                                                                                                                                                                   ; arqt         ;
+;       |arqt_mm_interconnect_0_router:router|                                                                          ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |arqt|arqt_mm_interconnect_0:mm_interconnect_0|arqt_mm_interconnect_0_router:router                                                                                                                                                                                                                                                                                   ; arqt         ;
 ;       |arqt_mm_interconnect_0_router_001:router_001|                                                                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |arqt|arqt_mm_interconnect_0:mm_interconnect_0|arqt_mm_interconnect_0_router_001:router_001                                                                                                                                                                                                                                                                           ; arqt         ;
-;       |arqt_mm_interconnect_0_rsp_mux:rsp_mux|                                                                        ; 39 (39)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |arqt|arqt_mm_interconnect_0:mm_interconnect_0|arqt_mm_interconnect_0_rsp_mux:rsp_mux                                                                                                                                                                                                                                                                                 ; arqt         ;
+;       |arqt_mm_interconnect_0_rsp_mux:rsp_mux|                                                                        ; 43 (43)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |arqt|arqt_mm_interconnect_0:mm_interconnect_0|arqt_mm_interconnect_0_rsp_mux:rsp_mux                                                                                                                                                                                                                                                                                 ; arqt         ;
 ;       |arqt_mm_interconnect_0_rsp_mux_001:rsp_mux_001|                                                                ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |arqt|arqt_mm_interconnect_0:mm_interconnect_0|arqt_mm_interconnect_0_rsp_mux_001:rsp_mux_001                                                                                                                                                                                                                                                                         ; arqt         ;
-;    |arqt_nios2_gen2_0:nios2_gen2_0|                                                                                   ; 968 (0)           ; 576 (0)      ; 10240       ; 0            ; 0       ; 0         ; 0    ; 0            ; |arqt|arqt_nios2_gen2_0:nios2_gen2_0                                                                                                                                                                                                                                                                                                                                  ; arqt         ;
-;       |arqt_nios2_gen2_0_cpu:cpu|                                                                                     ; 968 (679)         ; 576 (307)    ; 10240       ; 0            ; 0       ; 0         ; 0    ; 0            ; |arqt|arqt_nios2_gen2_0:nios2_gen2_0|arqt_nios2_gen2_0_cpu:cpu                                                                                                                                                                                                                                                                                                        ; arqt         ;
+;    |arqt_nios2_gen2_0:nios2_gen2_0|                                                                                   ; 970 (0)           ; 576 (0)      ; 10240       ; 0            ; 0       ; 0         ; 0    ; 0            ; |arqt|arqt_nios2_gen2_0:nios2_gen2_0                                                                                                                                                                                                                                                                                                                                  ; arqt         ;
+;       |arqt_nios2_gen2_0_cpu:cpu|                                                                                     ; 970 (681)         ; 576 (307)    ; 10240       ; 0            ; 0       ; 0         ; 0    ; 0            ; |arqt|arqt_nios2_gen2_0:nios2_gen2_0|arqt_nios2_gen2_0_cpu:cpu                                                                                                                                                                                                                                                                                                        ; arqt         ;
 ;          |arqt_nios2_gen2_0_cpu_nios2_oci:the_arqt_nios2_gen2_0_cpu_nios2_oci|                                        ; 289 (34)          ; 269 (80)     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |arqt|arqt_nios2_gen2_0:nios2_gen2_0|arqt_nios2_gen2_0_cpu:cpu|arqt_nios2_gen2_0_cpu_nios2_oci:the_arqt_nios2_gen2_0_cpu_nios2_oci                                                                                                                                                                                                                                    ; arqt         ;
 ;             |arqt_nios2_gen2_0_cpu_debug_slave_wrapper:the_arqt_nios2_gen2_0_cpu_debug_slave_wrapper|                 ; 92 (0)            ; 96 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |arqt|arqt_nios2_gen2_0:nios2_gen2_0|arqt_nios2_gen2_0_cpu:cpu|arqt_nios2_gen2_0_cpu_nios2_oci:the_arqt_nios2_gen2_0_cpu_nios2_oci|arqt_nios2_gen2_0_cpu_debug_slave_wrapper:the_arqt_nios2_gen2_0_cpu_debug_slave_wrapper                                                                                                                                            ; arqt         ;
 ;                |arqt_nios2_gen2_0_cpu_debug_slave_sysclk:the_arqt_nios2_gen2_0_cpu_debug_slave_sysclk|                ; 7 (7)             ; 49 (45)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |arqt|arqt_nios2_gen2_0:nios2_gen2_0|arqt_nios2_gen2_0_cpu:cpu|arqt_nios2_gen2_0_cpu_nios2_oci:the_arqt_nios2_gen2_0_cpu_nios2_oci|arqt_nios2_gen2_0_cpu_debug_slave_wrapper:the_arqt_nios2_gen2_0_cpu_debug_slave_wrapper|arqt_nios2_gen2_0_cpu_debug_slave_sysclk:the_arqt_nios2_gen2_0_cpu_debug_slave_sysclk                                                      ; arqt         ;
@@ -721,7 +720,7 @@ Encoding Type:  One-Hot
 ; arqt_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:memoria_s1_translator|av_chipselect_pre                                                                                                                                                                                                 ; Stuck at GND due to stuck port data_in                                                                                                                                                                                                                                                                                      ;
 ; arqt_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:saida_s1_translator|av_readdata_pre[4..31]                                                                                                                                                                                              ; Stuck at GND due to stuck port data_in                                                                                                                                                                                                                                                                                      ;
 ; arqt_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:saida_s1_translator|av_chipselect_pre                                                                                                                                                                                                   ; Stuck at GND due to stuck port data_in                                                                                                                                                                                                                                                                                      ;
-; arqt_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:sysid_qsys_0_control_slave_translator|av_readdata_pre[0..2,5..11,14..16,19,20,22,24,25,29,31]                                                                                                                                           ; Stuck at GND due to stuck port data_in                                                                                                                                                                                                                                                                                      ;
+; arqt_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:sysid_qsys_0_control_slave_translator|av_readdata_pre[0,2,3,5,8,10,15,19,20,22,24,25,29,31]                                                                                                                                             ; Stuck at GND due to stuck port data_in                                                                                                                                                                                                                                                                                      ;
 ; arqt_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:jtag_uart_0_avalon_jtag_slave_translator|av_readdata_pre[11,23..31]                                                                                                                                                                     ; Stuck at GND due to stuck port data_in                                                                                                                                                                                                                                                                                      ;
 ; arqt_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:jtag_uart_0_avalon_jtag_slave_translator|av_chipselect_pre                                                                                                                                                                              ; Stuck at GND due to stuck port data_in                                                                                                                                                                                                                                                                                      ;
 ; arqt_nios2_gen2_0:nios2_gen2_0|arqt_nios2_gen2_0_cpu:cpu|W_rf_ecc_recoverable_valid                                                                                                                                                                                                                             ; Stuck at GND due to stuck port data_in                                                                                                                                                                                                                                                                                      ;
@@ -813,7 +812,7 @@ Encoding Type:  One-Hot
 ; arqt_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sysid_qsys_0_control_slave_agent_rsp_fifo|mem[1][58]                                                                                                                                                                                             ; Merged with arqt_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sysid_qsys_0_control_slave_agent_rsp_fifo|mem[1][59]                                                                                                                                                                                             ;
 ; arqt_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo|mem[1][58]                                                                                                                                                                                          ; Merged with arqt_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo|mem[1][59]                                                                                                                                                                                          ;
 ; arqt_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo|mem[1][52]                                                                                                                                                                                          ; Merged with arqt_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo|mem[1][59]                                                                                                                                                                                          ;
-; arqt_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:sysid_qsys_0_control_slave_translator|av_readdata_pre[3,4,12,13,17,18,21,23,26..28]                                                                                                                                                     ; Merged with arqt_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:sysid_qsys_0_control_slave_translator|av_readdata_pre[30]                                                                                                                                                                               ;
+; arqt_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:sysid_qsys_0_control_slave_translator|av_readdata_pre[1,4,6,7,9,11..14,16..18,21,23,26..28]                                                                                                                                             ; Merged with arqt_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:sysid_qsys_0_control_slave_translator|av_readdata_pre[30]                                                                                                                                                                               ;
 ; arqt_nios2_gen2_0:nios2_gen2_0|arqt_nios2_gen2_0_cpu:cpu|R_ctrl_custom_multi                                                                                                                                                                                                                                    ; Merged with arqt_nios2_gen2_0:nios2_gen2_0|arqt_nios2_gen2_0_cpu:cpu|R_ctrl_custom                                                                                                                                                                                                                                          ;
 ; arqt_mm_interconnect_0:mm_interconnect_0|altera_merlin_master_agent:nios2_gen2_0_data_master_agent|hold_waitrequest                                                                                                                                                                                             ; Merged with arqt_jtag_uart_0:jtag_uart_0|alt_jtag_atlantic:arqt_jtag_uart_0_alt_jtag_atlantic|rst1                                                                                                                                                                                                                          ;
 ; arqt_mm_interconnect_0:mm_interconnect_0|altera_merlin_master_agent:nios2_gen2_0_instruction_master_agent|hold_waitrequest                                                                                                                                                                                      ; Merged with arqt_jtag_uart_0:jtag_uart_0|alt_jtag_atlantic:arqt_jtag_uart_0_alt_jtag_atlantic|rst1                                                                                                                                                                                                                          ;
@@ -1176,14 +1175,6 @@ Encoding Type:  One-Hot
 ; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |arqt|arqt_nios2_gen2_0:nios2_gen2_0|arqt_nios2_gen2_0_cpu:cpu|W_rf_wr_data[15]                                                                                                                                                                                                                                   ;
 ; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |arqt|arqt_nios2_gen2_0:nios2_gen2_0|arqt_nios2_gen2_0_cpu:cpu|D_dst_regnum[2]                                                                                                                                                                                                                                    ;
 ; 5:1                ; 2 bits    ; 6 LEs         ; 2 LEs                ; 4 LEs                  ; No         ; |arqt|arqt_mm_interconnect_0:mm_interconnect_0|arqt_mm_interconnect_0_router:router|src_channel[4]                                                                                                                                                                                                                ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |arqt|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|hub_minor_ver_reg[3]                                              ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |arqt|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]                                        ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 2 LEs                ; 6 LEs                  ; Yes        ; |arqt|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|irf_reg[2][0]                                                     ;
-; 5:1                ; 5 bits    ; 15 LEs        ; 5 LEs                ; 10 LEs                 ; Yes        ; |arqt|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg|word_counter[0]                           ;
-; 6:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |arqt|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|irsr_reg[2]                                                       ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 2 LEs                ; 6 LEs                  ; Yes        ; |arqt|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|shadow_irf_reg[2][0]                                              ;
-; 34:1               ; 4 bits    ; 88 LEs        ; 56 LEs               ; 32 LEs                 ; Yes        ; |arqt|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[0]                                                ;
-; 28:1               ; 4 bits    ; 72 LEs        ; 48 LEs               ; 24 LEs                 ; Yes        ; |arqt|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg|WORD_SR[0]                                ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -4020,61 +4011,30 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA SLD           ; 7                           ;
 ;     SLD               ; 10                          ;
 ;     plain             ; 119                         ;
-; cycloneiii_lcell_comb ; 1407                        ;
+; cycloneiii_lcell_comb ; 1414                        ;
 ;     arith             ; 100                         ;
 ;         2 data inputs ; 57                          ;
 ;         3 data inputs ; 43                          ;
-;     normal            ; 1307                        ;
+;     normal            ; 1314                        ;
 ;         0 data inputs ; 3                           ;
 ;         1 data inputs ; 21                          ;
-;         2 data inputs ; 180                         ;
-;         3 data inputs ; 347                         ;
-;         4 data inputs ; 756                         ;
+;         2 data inputs ; 179                         ;
+;         3 data inputs ; 349                         ;
+;         4 data inputs ; 762                         ;
 ; cycloneiii_ram_block  ; 144                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 10.00                       ;
-; Average LUT depth     ; 2.81                        ;
+; Average LUT depth     ; 2.80                        ;
 +-----------------------+-----------------------------+
 
 
-+------------------------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Partition sld_hub:auto_hub ;
-+-----------------------+------------------------------------------+
-; Type                  ; Count                                    ;
-+-----------------------+------------------------------------------+
-; boundary_port         ; 140                                      ;
-; cycloneiii_ff         ; 83                                       ;
-;     CLR               ; 5                                        ;
-;     ENA               ; 16                                       ;
-;     ENA CLR           ; 22                                       ;
-;     ENA CLR SLD       ; 4                                        ;
-;     ENA SCLR          ; 5                                        ;
-;     ENA SLD           ; 9                                        ;
-;     SCLR              ; 7                                        ;
-;     plain             ; 15                                       ;
-; cycloneiii_lcell_comb ; 147                                      ;
-;     arith             ; 8                                        ;
-;         2 data inputs ; 8                                        ;
-;     normal            ; 139                                      ;
-;         0 data inputs ; 1                                        ;
-;         1 data inputs ; 7                                        ;
-;         2 data inputs ; 29                                       ;
-;         3 data inputs ; 37                                       ;
-;         4 data inputs ; 65                                       ;
-;                       ;                                          ;
-; Max LUT depth         ; 3.00                                     ;
-; Average LUT depth     ; 1.90                                     ;
-+-----------------------+------------------------------------------+
-
-
-+---------------------------------+
-; Elapsed Time Per Partition      ;
-+------------------+--------------+
-; Partition Name   ; Elapsed Time ;
-+------------------+--------------+
-; Top              ; 00:00:03     ;
-; sld_hub:auto_hub ; 00:00:00     ;
-+------------------+--------------+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:03     ;
++----------------+--------------+
 
 
 +-------------------------------+
@@ -4083,32 +4043,32 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 15.0.0 Build 145 04/22/2015 Patches 0.01we SJ Web Edition
-    Info: Processing started: Thu Apr 04 13:25:25 2019
+    Info: Processing started: Fri Apr 05 12:56:49 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Problema1 -c Problema1
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12248): Elaborating Qsys system entity "arqt.qsys"
-Info (12250): 2019.04.04.13:25:54 Progress: Loading SD-Prob1/arqt.qsys
-Info (12250): 2019.04.04.13:25:55 Progress: Reading input file
-Info (12250): 2019.04.04.13:25:55 Progress: Adding LCD_0 [LCD 1.0]
-Info (12250): 2019.04.04.13:25:56 Progress: Parameterizing module LCD_0
-Info (12250): 2019.04.04.13:25:56 Progress: Adding clk_0 [clock_source 15.0]
-Info (12250): 2019.04.04.13:25:56 Progress: Parameterizing module clk_0
-Info (12250): 2019.04.04.13:25:56 Progress: Adding entrada [altera_avalon_pio 15.0]
-Info (12250): 2019.04.04.13:25:56 Progress: Parameterizing module entrada
-Info (12250): 2019.04.04.13:25:56 Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 15.0]
-Info (12250): 2019.04.04.13:25:56 Progress: Parameterizing module jtag_uart_0
-Info (12250): 2019.04.04.13:25:56 Progress: Adding memoria [altera_avalon_onchip_memory2 15.0]
-Info (12250): 2019.04.04.13:25:56 Progress: Parameterizing module memoria
-Info (12250): 2019.04.04.13:25:56 Progress: Adding nios2_gen2_0 [altera_nios2_gen2 15.0]
-Info (12250): 2019.04.04.13:25:57 Progress: Parameterizing module nios2_gen2_0
-Info (12250): 2019.04.04.13:25:57 Progress: Adding saida [altera_avalon_pio 15.0]
-Info (12250): 2019.04.04.13:25:57 Progress: Parameterizing module saida
-Info (12250): 2019.04.04.13:25:57 Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 15.0]
-Info (12250): 2019.04.04.13:25:57 Progress: Parameterizing module sysid_qsys_0
-Info (12250): 2019.04.04.13:25:57 Progress: Building connections
-Info (12250): 2019.04.04.13:25:57 Progress: Parameterizing connections
-Info (12250): 2019.04.04.13:25:57 Progress: Validating
-Info (12250): 2019.04.04.13:25:58 Progress: Done reading input file
+Info (12250): 2019.04.05.12:57:01 Progress: Loading SD-Prob1/arqt.qsys
+Info (12250): 2019.04.05.12:57:02 Progress: Reading input file
+Info (12250): 2019.04.05.12:57:02 Progress: Adding LCD_0 [LCD 1.0]
+Info (12250): 2019.04.05.12:57:03 Progress: Parameterizing module LCD_0
+Info (12250): 2019.04.05.12:57:03 Progress: Adding clk_0 [clock_source 15.0]
+Info (12250): 2019.04.05.12:57:03 Progress: Parameterizing module clk_0
+Info (12250): 2019.04.05.12:57:03 Progress: Adding entrada [altera_avalon_pio 15.0]
+Info (12250): 2019.04.05.12:57:03 Progress: Parameterizing module entrada
+Info (12250): 2019.04.05.12:57:03 Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 15.0]
+Info (12250): 2019.04.05.12:57:03 Progress: Parameterizing module jtag_uart_0
+Info (12250): 2019.04.05.12:57:03 Progress: Adding memoria [altera_avalon_onchip_memory2 15.0]
+Info (12250): 2019.04.05.12:57:03 Progress: Parameterizing module memoria
+Info (12250): 2019.04.05.12:57:03 Progress: Adding nios2_gen2_0 [altera_nios2_gen2 15.0]
+Info (12250): 2019.04.05.12:57:03 Progress: Parameterizing module nios2_gen2_0
+Info (12250): 2019.04.05.12:57:03 Progress: Adding saida [altera_avalon_pio 15.0]
+Info (12250): 2019.04.05.12:57:03 Progress: Parameterizing module saida
+Info (12250): 2019.04.05.12:57:03 Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 15.0]
+Info (12250): 2019.04.05.12:57:04 Progress: Parameterizing module sysid_qsys_0
+Info (12250): 2019.04.05.12:57:04 Progress: Building connections
+Info (12250): 2019.04.05.12:57:04 Progress: Parameterizing connections
+Info (12250): 2019.04.05.12:57:04 Progress: Validating
+Info (12250): 2019.04.05.12:57:05 Progress: Done reading input file
 Info (12250): Arqt.entrada: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Info (12250): Arqt.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
 Info (12250): Arqt.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
@@ -4119,20 +4079,20 @@ Warning (12251): Arqt: "No matching role found for nios2_gen2_0_custom_instructi
 Warning (12251): Arqt: "No matching role found for nios2_gen2_0_custom_instruction_master_multi_slave_translator0:ci_master:ci_master_reset (reset)"
 Info (12250): LCD_0: "arqt" instantiated LCD "LCD_0"
 Info (12250): Entrada: Starting RTL generation for module 'arqt_entrada'
-Info (12250): Entrada:   Generation command is [exec C:/altera/15.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.0/quartus/bin64/perl/lib -I C:/altera/15.0/quartus/sopc_builder/bin/europa -I C:/altera/15.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.0/quartus/sopc_builder/bin -I C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=arqt_entrada --dir=C:/Users/victo/AppData/Local/Temp/alt7990_1963977221427589437.dir/0002_entrada_gen/ --quartus_dir=C:/altera/15.0/quartus --verilog --config=C:/Users/victo/AppData/Local/Temp/alt7990_1963977221427589437.dir/0002_entrada_gen//arqt_entrada_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Entrada:   Generation command is [exec C:/altera/15.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.0/quartus/bin64/perl/lib -I C:/altera/15.0/quartus/sopc_builder/bin/europa -I C:/altera/15.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.0/quartus/sopc_builder/bin -I C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=arqt_entrada --dir=C:/Users/victo/AppData/Local/Temp/alt7991_4980441888630855283.dir/0002_entrada_gen/ --quartus_dir=C:/altera/15.0/quartus --verilog --config=C:/Users/victo/AppData/Local/Temp/alt7991_4980441888630855283.dir/0002_entrada_gen//arqt_entrada_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): Entrada: Done RTL generation for module 'arqt_entrada'
 Info (12250): Entrada: "arqt" instantiated altera_avalon_pio "entrada"
 Info (12250): Jtag_uart_0: Starting RTL generation for module 'arqt_jtag_uart_0'
-Info (12250): Jtag_uart_0:   Generation command is [exec C:/altera/15.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.0/quartus/bin64/perl/lib -I C:/altera/15.0/quartus/sopc_builder/bin/europa -I C:/altera/15.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.0/quartus/sopc_builder/bin -I C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=arqt_jtag_uart_0 --dir=C:/Users/victo/AppData/Local/Temp/alt7990_1963977221427589437.dir/0003_jtag_uart_0_gen/ --quartus_dir=C:/altera/15.0/quartus --verilog --config=C:/Users/victo/AppData/Local/Temp/alt7990_1963977221427589437.dir/0003_jtag_uart_0_gen//arqt_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Jtag_uart_0:   Generation command is [exec C:/altera/15.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.0/quartus/bin64/perl/lib -I C:/altera/15.0/quartus/sopc_builder/bin/europa -I C:/altera/15.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.0/quartus/sopc_builder/bin -I C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=arqt_jtag_uart_0 --dir=C:/Users/victo/AppData/Local/Temp/alt7991_4980441888630855283.dir/0003_jtag_uart_0_gen/ --quartus_dir=C:/altera/15.0/quartus --verilog --config=C:/Users/victo/AppData/Local/Temp/alt7991_4980441888630855283.dir/0003_jtag_uart_0_gen//arqt_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): Jtag_uart_0: Done RTL generation for module 'arqt_jtag_uart_0'
 Info (12250): Jtag_uart_0: "arqt" instantiated altera_avalon_jtag_uart "jtag_uart_0"
 Info (12250): Memoria: Starting RTL generation for module 'arqt_memoria'
-Info (12250): Memoria:   Generation command is [exec C:/altera/15.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.0/quartus/bin64/perl/lib -I C:/altera/15.0/quartus/sopc_builder/bin/europa -I C:/altera/15.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.0/quartus/sopc_builder/bin -I C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=arqt_memoria --dir=C:/Users/victo/AppData/Local/Temp/alt7990_1963977221427589437.dir/0004_memoria_gen/ --quartus_dir=C:/altera/15.0/quartus --verilog --config=C:/Users/victo/AppData/Local/Temp/alt7990_1963977221427589437.dir/0004_memoria_gen//arqt_memoria_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Memoria:   Generation command is [exec C:/altera/15.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.0/quartus/bin64/perl/lib -I C:/altera/15.0/quartus/sopc_builder/bin/europa -I C:/altera/15.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.0/quartus/sopc_builder/bin -I C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=arqt_memoria --dir=C:/Users/victo/AppData/Local/Temp/alt7991_4980441888630855283.dir/0004_memoria_gen/ --quartus_dir=C:/altera/15.0/quartus --verilog --config=C:/Users/victo/AppData/Local/Temp/alt7991_4980441888630855283.dir/0004_memoria_gen//arqt_memoria_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): Memoria: Done RTL generation for module 'arqt_memoria'
 Info (12250): Memoria: "arqt" instantiated altera_avalon_onchip_memory2 "memoria"
 Info (12250): Nios2_gen2_0: "arqt" instantiated altera_nios2_gen2 "nios2_gen2_0"
 Info (12250): Saida: Starting RTL generation for module 'arqt_saida'
-Info (12250): Saida:   Generation command is [exec C:/altera/15.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.0/quartus/bin64/perl/lib -I C:/altera/15.0/quartus/sopc_builder/bin/europa -I C:/altera/15.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.0/quartus/sopc_builder/bin -I C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=arqt_saida --dir=C:/Users/victo/AppData/Local/Temp/alt7990_1963977221427589437.dir/0005_saida_gen/ --quartus_dir=C:/altera/15.0/quartus --verilog --config=C:/Users/victo/AppData/Local/Temp/alt7990_1963977221427589437.dir/0005_saida_gen//arqt_saida_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Saida:   Generation command is [exec C:/altera/15.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.0/quartus/bin64/perl/lib -I C:/altera/15.0/quartus/sopc_builder/bin/europa -I C:/altera/15.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.0/quartus/sopc_builder/bin -I C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=arqt_saida --dir=C:/Users/victo/AppData/Local/Temp/alt7991_4980441888630855283.dir/0005_saida_gen/ --quartus_dir=C:/altera/15.0/quartus --verilog --config=C:/Users/victo/AppData/Local/Temp/alt7991_4980441888630855283.dir/0005_saida_gen//arqt_saida_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): Saida: Done RTL generation for module 'arqt_saida'
 Info (12250): Saida: "arqt" instantiated altera_avalon_pio "saida"
 Info (12250): Sysid_qsys_0: "arqt" instantiated altera_avalon_sysid_qsys "sysid_qsys_0"
@@ -4149,19 +4109,19 @@ Info (12250): Mm_interconnect_0: "arqt" instantiated altera_mm_interconnect "mm_
 Info (12250): Irq_mapper: "arqt" instantiated altera_irq_mapper "irq_mapper"
 Info (12250): Rst_controller: "arqt" instantiated altera_reset_controller "rst_controller"
 Info (12250): Cpu: Starting RTL generation for module 'arqt_nios2_gen2_0_cpu'
-Info (12250): Cpu:   Generation command is [exec C:/altera/15.0/quartus/bin64/eperlcmd.exe -I C:/altera/15.0/quartus/bin64/perl/lib -I C:/altera/15.0/quartus/sopc_builder/bin/europa -I C:/altera/15.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.0/quartus/sopc_builder/bin -I C:/altera/15.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/altera/15.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/altera/15.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/altera/15.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/altera/15.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=arqt_nios2_gen2_0_cpu --dir=C:/Users/victo/AppData/Local/Temp/alt7990_1963977221427589437.dir/0010_cpu_gen/ --quartus_bindir=C:/altera/15.0/quartus/bin64 --verilog --config=C:/Users/victo/AppData/Local/Temp/alt7990_1963977221427589437.dir/0010_cpu_gen//arqt_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
-Info (12250): Cpu: # 2019.04.04 13:26:32 (*) Starting Nios II generation
-Info (12250): Cpu: # 2019.04.04 13:26:32 (*)   Checking for plaintext license.
-Info (12250): Cpu: # 2019.04.04 13:26:33 (*)   Couldn't query license setup in Quartus directory C:/altera/15.0/quartus/bin64
-Info (12250): Cpu: # 2019.04.04 13:26:33 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
-Info (12250): Cpu: # 2019.04.04 13:26:33 (*)   LM_LICENSE_FILE environment variable is empty
-Info (12250): Cpu: # 2019.04.04 13:26:33 (*)   Plaintext license not found.
-Info (12250): Cpu: # 2019.04.04 13:26:33 (*)   No license required to generate encrypted Nios II/e.
-Info (12250): Cpu: # 2019.04.04 13:26:33 (*)   Elaborating CPU configuration settings
-Info (12250): Cpu: # 2019.04.04 13:26:33 (*)   Creating all objects for CPU
-Info (12250): Cpu: # 2019.04.04 13:26:34 (*)   Generating RTL from CPU objects
-Info (12250): Cpu: # 2019.04.04 13:26:34 (*)   Creating plain-text RTL
-Info (12250): Cpu: # 2019.04.04 13:26:35 (*) Done Nios II generation
+Info (12250): Cpu:   Generation command is [exec C:/altera/15.0/quartus/bin64/eperlcmd.exe -I C:/altera/15.0/quartus/bin64/perl/lib -I C:/altera/15.0/quartus/sopc_builder/bin/europa -I C:/altera/15.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.0/quartus/sopc_builder/bin -I C:/altera/15.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/altera/15.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/altera/15.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/altera/15.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/altera/15.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=arqt_nios2_gen2_0_cpu --dir=C:/Users/victo/AppData/Local/Temp/alt7991_4980441888630855283.dir/0010_cpu_gen/ --quartus_bindir=C:/altera/15.0/quartus/bin64 --verilog --config=C:/Users/victo/AppData/Local/Temp/alt7991_4980441888630855283.dir/0010_cpu_gen//arqt_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info (12250): Cpu: # 2019.04.05 12:57:23 (*) Starting Nios II generation
+Info (12250): Cpu: # 2019.04.05 12:57:23 (*)   Checking for plaintext license.
+Info (12250): Cpu: # 2019.04.05 12:57:25 (*)   Couldn't query license setup in Quartus directory C:/altera/15.0/quartus/bin64
+Info (12250): Cpu: # 2019.04.05 12:57:25 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info (12250): Cpu: # 2019.04.05 12:57:25 (*)   LM_LICENSE_FILE environment variable is empty
+Info (12250): Cpu: # 2019.04.05 12:57:25 (*)   Plaintext license not found.
+Info (12250): Cpu: # 2019.04.05 12:57:25 (*)   No license required to generate encrypted Nios II/e.
+Info (12250): Cpu: # 2019.04.05 12:57:25 (*)   Elaborating CPU configuration settings
+Info (12250): Cpu: # 2019.04.05 12:57:25 (*)   Creating all objects for CPU
+Info (12250): Cpu: # 2019.04.05 12:57:26 (*)   Generating RTL from CPU objects
+Info (12250): Cpu: # 2019.04.05 12:57:26 (*)   Creating plain-text RTL
+Info (12250): Cpu: # 2019.04.05 12:57:27 (*) Done Nios II generation
 Info (12250): Cpu: Done RTL generation for module 'arqt_nios2_gen2_0_cpu'
 Info (12250): Cpu: "nios2_gen2_0" instantiated altera_nios2_gen2_unit "cpu"
 Info (12250): Nios2_gen2_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_gen2_0_data_master_translator"
@@ -4603,7 +4563,7 @@ Info (12128): Elaborating entity "altera_reset_controller" for hierarchy "altera
 Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1"
 Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1"
 Info (11170): Start IP generation for the debug fabric within sld_hub.
-Info (11172): 2019.04.04.13:26:48 Progress: Loading sld415d47b4/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2019.04.05.12:57:38 Progress: Loading sld415d47b4/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -4633,22 +4593,19 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "lcd_0_conduit_end_3_writeresponsevalid_n" is stuck at GND
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
 Info (17049): 35 registers lost all their fanouts during netlist optimizations.
-Info (13000): Registers with preset signals will power-up high
-Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
-Info (286031): Timing-Driven Synthesis is running on partition "sld_hub:auto_hub"
 Info (144001): Generated suppressed messages file D:/Users/victo/Desktop/GitHub/SD-Prob1/output_files/Problema1.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1945 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1952 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 8 input pins
     Info (21059): Implemented 16 output pins
-    Info (21061): Implemented 1776 logic cells
+    Info (21061): Implemented 1783 logic cells
     Info (21064): Implemented 144 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 11 warnings
-    Info: Peak virtual memory: 4952 megabytes
-    Info: Processing ended: Thu Apr 04 13:27:03 2019
-    Info: Elapsed time: 00:01:38
-    Info: Total CPU time (on all processors): 00:02:19
+    Info: Peak virtual memory: 4954 megabytes
+    Info: Processing ended: Fri Apr 05 12:57:50 2019
+    Info: Elapsed time: 00:01:01
+    Info: Total CPU time (on all processors): 00:01:53
 
 
 +------------------------------------------+

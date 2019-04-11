@@ -1,18 +1,20 @@
 
 module arqt (
+	buttons_export,
 	clk_clk,
-	entrada_export,
-	lcd_0_conduit_end_writeresponsevalid_n,
-	lcd_0_conduit_end_1_writeresponsevalid_n,
-	lcd_0_conduit_end_2_readdata,
-	lcd_0_conduit_end_3_writeresponsevalid_n,
-	saida_export);	
+	leds_export,
+	reset_reset_n,
+	lcd_rw_writeresponsevalid_n,
+	lcd_rs_writeresponsevalid_n,
+	lcd_enable_writeresponsevalid_n,
+	lcd_display_readdata);	
 
+	input	[3:0]	buttons_export;
 	input		clk_clk;
-	input	[3:0]	entrada_export;
-	output		lcd_0_conduit_end_writeresponsevalid_n;
-	output		lcd_0_conduit_end_1_writeresponsevalid_n;
-	output	[7:0]	lcd_0_conduit_end_2_readdata;
-	output		lcd_0_conduit_end_3_writeresponsevalid_n;
-	output	[3:0]	saida_export;
+	output	[3:0]	leds_export;
+	input		reset_reset_n;
+	output		lcd_rw_writeresponsevalid_n;
+	output		lcd_rs_writeresponsevalid_n;
+	output		lcd_enable_writeresponsevalid_n;
+	output	[7:0]	lcd_display_readdata;
 endmodule

@@ -1,28 +1,8 @@
 # # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
 # 
-preplace inst arqte1.sysid_qsys_0 -pg 1 -lvl 3 -y 210
-preplace inst arqte1.entrada2 -pg 1 -lvl 3 -y 30
-preplace inst arqte1.nios2_gen2_0.cpu -pg 1
-preplace inst arqte1.memoria -pg 1 -lvl 3 -y 130
-preplace inst arqte1.jtag_uart_0 -pg 1 -lvl 3 -y 290
-preplace inst arqte1 -pg 1 -lvl 1 -y 40 -regy -20
-preplace inst arqte1.LCD_0 -pg 1 -lvl 3 -y 590
-preplace inst arqte1.nios2_gen2_0.reset_bridge -pg 1
-preplace inst arqte1.nios2_gen2_0.clock_bridge -pg 1
-preplace inst arqte1.clk_0 -pg 1 -lvl 1 -y 280
-preplace inst arqte1.saida -pg 1 -lvl 3 -y 490
-preplace inst arqte1.nios2_gen2_0 -pg 1 -lvl 2 -y 280
-preplace netloc POINT_TO_POINT<net_container>arqte1</net_container>(SLAVE)jtag_uart_0.irq,(MASTER)nios2_gen2_0.irq) 1 2 1 820
-preplace netloc INTERCONNECT<net_container>arqte1</net_container>(SLAVE)sysid_qsys_0.control_slave,(SLAVE)memoria.s1,(SLAVE)jtag_uart_0.avalon_jtag_slave,(SLAVE)saida.s1,(SLAVE)nios2_gen2_0.debug_mem_slave,(SLAVE)entrada2.s1,(MASTER)nios2_gen2_0.data_master,(MASTER)nios2_gen2_0.instruction_master) 1 1 2 400 460 780
-preplace netloc EXPORT<net_container>arqte1</net_container>(SLAVE)saida.external_connection,(SLAVE)arqte1.out1) 1 0 3 NJ 520 NJ 520 NJ
-preplace netloc EXPORT<net_container>arqte1</net_container>(SLAVE)arqte1.lcd_0_conduit_end_3,(SLAVE)LCD_0.conduit_end_3) 1 0 3 NJ 660 NJ 660 NJ
-preplace netloc EXPORT<net_container>arqte1</net_container>(SLAVE)clk_0.clk_in,(SLAVE)arqte1.clk) 1 0 1 NJ
-preplace netloc POINT_TO_POINT<net_container>arqte1</net_container>(SLAVE)LCD_0.nios_custom_instruction_slave,(MASTER)nios2_gen2_0.custom_instruction_master) 1 2 1 760
-preplace netloc EXPORT<net_container>arqte1</net_container>(SLAVE)LCD_0.conduit_end,(SLAVE)arqte1.lcd_0_conduit_end) 1 0 3 NJ 600 NJ 600 NJ
-preplace netloc EXPORT<net_container>arqte1</net_container>(SLAVE)arqte1.int1,(SLAVE)entrada2.external_connection) 1 0 3 NJ 60 NJ 60 NJ
-preplace netloc INTERCONNECT<net_container>arqte1</net_container>(SLAVE)memoria.reset1,(SLAVE)clk_0.clk_in_reset,(SLAVE)saida.reset,(MASTER)nios2_gen2_0.debug_reset_request,(SLAVE)entrada2.reset,(SLAVE)nios2_gen2_0.reset,(SLAVE)sysid_qsys_0.reset,(SLAVE)jtag_uart_0.reset,(MASTER)clk_0.clk_reset) 1 0 3 160 350 360 440 800
-preplace netloc FAN_OUT<net_container>arqte1</net_container>(MASTER)clk_0.clk,(SLAVE)sysid_qsys_0.clk,(SLAVE)nios2_gen2_0.clk,(SLAVE)saida.clk,(SLAVE)jtag_uart_0.clk,(SLAVE)entrada2.clk,(SLAVE)memoria.clk1) 1 1 2 380 420 840
-preplace netloc EXPORT<net_container>arqte1</net_container>(SLAVE)LCD_0.conduit_end_1,(SLAVE)arqte1.lcd_0_conduit_end_1) 1 0 3 NJ 620 NJ 620 NJ
-preplace netloc EXPORT<net_container>arqte1</net_container>(SLAVE)arqte1.lcd_0_conduit_end_2,(SLAVE)LCD_0.conduit_end_2) 1 0 3 NJ 640 NJ 640 NJ
-levelinfo -pg 1 0 130 1090
-levelinfo -hier arqte1 140 190 520 870 1080
+preplace inst unsaved.clk_0 -pg 1 -lvl 1 -y 30
+preplace inst unsaved -pg 1 -lvl 1 -y 40 -regy -20
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)clk_0.clk_in_reset,(SLAVE)unsaved.reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)clk_0.clk_in,(SLAVE)unsaved.clk) 1 0 1 NJ
+levelinfo -pg 1 0 50 270
+levelinfo -hier unsaved 60 90 260

@@ -1,37 +1,37 @@
 # -------------------------------------------------------------------------- #
 #
-# Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
-# Your use of Altera Corporation's design tools, logic functions 
+# Copyright (C) 2017  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
 # and other software and tools, and its AMPP partner logic 
 # functions, and any output files from any of the foregoing 
 # (including device programming or simulation files), and any 
 # associated documentation or information are expressly subject 
-# to the terms and conditions of the Altera Program License 
-# Subscription Agreement, the Altera Quartus II License Agreement,
-# the Altera MegaCore Function License Agreement, or other 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel MegaCore Function License Agreement, or other 
 # applicable license agreement, including, without limitation, 
 # that your use is for the sole purpose of programming logic 
-# devices manufactured by Altera and sold by Altera or its 
+# devices manufactured by Intel and sold by Intel or its 
 # authorized distributors.  Please refer to the applicable 
 # agreement for further details.
 #
 # -------------------------------------------------------------------------- #
 #
-# Quartus II 64-Bit
-# Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
-# Date created = 14:32:02  April 02, 2019
+# Quartus Prime
+# Version 16.1.2 Build 203 01/18/2017 SJ Lite Edition
+# Date created = 22:05:56  April 10, 2019
 #
 # -------------------------------------------------------------------------- #
 #
 # Notes:
 #
 # 1) The default values for assignments are stored in the file:
-#		Problema1_assignment_defaults.qdf
+#		problema1_assignment_defaults.qdf
 #    If this file doesn't exist, see file:
 #		assignment_defaults.qdf
 #
 # 2) Altera recommends that you do not modify this file. This
-#    file is updated automatically by the Quartus II software
+#    file is updated automatically by the Quartus Prime software
 #    and any changes you make may be lost or overwritten.
 #
 # -------------------------------------------------------------------------- #
@@ -39,82 +39,40 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE6E22C8
-set_global_assignment -name TOP_LEVEL_ENTITY arqt
-set_global_assignment -name ORIGINAL_QUARTUS_VERSION 15.0.0
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:32:02  APRIL 02, 2019"
-set_global_assignment -name LAST_QUARTUS_VERSION "15.0.0 SP0.01WE"
+set_global_assignment -name TOP_LEVEL_ENTITY problema1
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 16.1.2
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "22:05:56  APRIL 10, 2019"
+set_global_assignment -name LAST_QUARTUS_VERSION "16.1.2 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
-set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
-set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name QIP_FILE arqt/synthesis/arqt.qip
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
-set_global_assignment -name VERILOG_FILE arqt/synthesis/submodules/lcd.v
-set_global_assignment -name VERILOG_FILE arqt/synthesis/submodules/arqt_sysid_qsys_0.v
-set_global_assignment -name VERILOG_FILE arqt/synthesis/submodules/arqt_saida.v
-set_global_assignment -name SYSTEMVERILOG_FILE arqt/synthesis/submodules/arqt_nios2_gen2_0_custom_instruction_master_multi_xconnect.sv
-set_global_assignment -name VERILOG_FILE arqt/synthesis/submodules/arqt_nios2_gen2_0_cpu_test_bench.v
-set_global_assignment -name VERILOG_FILE arqt/synthesis/submodules/arqt_nios2_gen2_0_cpu_debug_slave_wrapper.v
-set_global_assignment -name VERILOG_FILE arqt/synthesis/submodules/arqt_nios2_gen2_0_cpu_debug_slave_tck.v
-set_global_assignment -name VERILOG_FILE arqt/synthesis/submodules/arqt_nios2_gen2_0_cpu_debug_slave_sysclk.v
-set_global_assignment -name VERILOG_FILE arqt/synthesis/submodules/arqt_nios2_gen2_0_cpu.v
-set_global_assignment -name VERILOG_FILE arqt/synthesis/submodules/arqt_nios2_gen2_0.v
-set_global_assignment -name SYSTEMVERILOG_FILE arqt/synthesis/submodules/arqt_mm_interconnect_0_rsp_mux_001.sv
-set_global_assignment -name SYSTEMVERILOG_FILE arqt/synthesis/submodules/arqt_mm_interconnect_0_rsp_mux.sv
-set_global_assignment -name SYSTEMVERILOG_FILE arqt/synthesis/submodules/arqt_mm_interconnect_0_rsp_demux.sv
-set_global_assignment -name SYSTEMVERILOG_FILE arqt/synthesis/submodules/arqt_mm_interconnect_0_router_004.sv
-set_global_assignment -name SYSTEMVERILOG_FILE arqt/synthesis/submodules/arqt_mm_interconnect_0_router_002.sv
-set_global_assignment -name SYSTEMVERILOG_FILE arqt/synthesis/submodules/arqt_mm_interconnect_0_router_001.sv
-set_global_assignment -name SYSTEMVERILOG_FILE arqt/synthesis/submodules/arqt_mm_interconnect_0_router.sv
-set_global_assignment -name SYSTEMVERILOG_FILE arqt/synthesis/submodules/arqt_mm_interconnect_0_cmd_mux_002.sv
-set_global_assignment -name SYSTEMVERILOG_FILE arqt/synthesis/submodules/arqt_mm_interconnect_0_cmd_mux.sv
-set_global_assignment -name SYSTEMVERILOG_FILE arqt/synthesis/submodules/arqt_mm_interconnect_0_cmd_demux_001.sv
-set_global_assignment -name SYSTEMVERILOG_FILE arqt/synthesis/submodules/arqt_mm_interconnect_0_cmd_demux.sv
-set_global_assignment -name SYSTEMVERILOG_FILE arqt/synthesis/submodules/arqt_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv
-set_global_assignment -name VERILOG_FILE arqt/synthesis/submodules/arqt_mm_interconnect_0_avalon_st_adapter.v
-set_global_assignment -name VERILOG_FILE arqt/synthesis/submodules/arqt_mm_interconnect_0.v
-set_global_assignment -name VERILOG_FILE arqt/synthesis/submodules/arqt_memoria.v
-set_global_assignment -name VERILOG_FILE arqt/synthesis/submodules/arqt_jtag_uart_0.v
-set_global_assignment -name SYSTEMVERILOG_FILE arqt/synthesis/submodules/arqt_irq_mapper.sv
-set_global_assignment -name VERILOG_FILE arqt/synthesis/submodules/arqt_entrada.v
-set_global_assignment -name VERILOG_FILE arqt/synthesis/submodules/altera_reset_synchronizer.v
-set_global_assignment -name VERILOG_FILE arqt/synthesis/submodules/altera_reset_controller.v
-set_global_assignment -name SYSTEMVERILOG_FILE arqt/synthesis/submodules/altera_merlin_slave_translator.sv
-set_global_assignment -name SYSTEMVERILOG_FILE arqt/synthesis/submodules/altera_merlin_slave_agent.sv
-set_global_assignment -name SYSTEMVERILOG_FILE arqt/synthesis/submodules/altera_merlin_master_translator.sv
-set_global_assignment -name SYSTEMVERILOG_FILE arqt/synthesis/submodules/altera_merlin_master_agent.sv
-set_global_assignment -name SYSTEMVERILOG_FILE arqt/synthesis/submodules/altera_merlin_burst_uncompressor.sv
-set_global_assignment -name SYSTEMVERILOG_FILE arqt/synthesis/submodules/altera_merlin_arbitrator.sv
-set_global_assignment -name SYSTEMVERILOG_FILE arqt/synthesis/submodules/altera_customins_slave_translator.sv
-set_global_assignment -name VERILOG_FILE arqt/synthesis/submodules/altera_customins_master_translator.v
-set_global_assignment -name VERILOG_FILE arqt/synthesis/submodules/altera_avalon_sc_fifo.v
-set_global_assignment -name QSYS_FILE arqt.qsys
-set_global_assignment -name VERILOG_FILE lcd.v
+set_global_assignment -name BDF_FILE problema1.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_location_assignment PIN_88 -to entrada_export[0]
-set_location_assignment PIN_89 -to entrada_export[1]
-set_location_assignment PIN_90 -to entrada_export[2]
-set_location_assignment PIN_91 -to entrada_export[3]
-set_location_assignment PIN_84 -to saida_export[0]
-set_location_assignment PIN_85 -to saida_export[1]
-set_location_assignment PIN_86 -to saida_export[2]
-set_location_assignment PIN_87 -to saida_export[3]
-set_location_assignment PIN_142 -to lcd_0_conduit_end_2_readdata[0]
-set_location_assignment IOBANK_1 -to lcd_0_conduit_end_2_readdata[1]
-set_location_assignment PIN_144 -to lcd_0_conduit_end_2_readdata[2]
-set_location_assignment IOBANK_3 -to lcd_0_conduit_end_2_readdata[3]
-set_location_assignment IOBANK_2 -to lcd_0_conduit_end_2_readdata[4]
-set_location_assignment PIN_10 -to lcd_0_conduit_end_2_readdata[5]
-set_location_assignment IOBANK_7 -to lcd_0_conduit_end_2_readdata[6]
-set_location_assignment PIN_11 -to lcd_0_conduit_end_2_readdata[7]
-set_location_assignment PIN_143 -to lcd_0_conduit_end_1_writeresponsevalid_n
-set_location_assignment PIN_141 -to lcd_0_conduit_end_writeresponsevalid_n
-set_location_assignment PIN_138 -to lcd_0_conduit_end_3_writeresponsevalid_n
-set_location_assignment PIN_23 -to clk_clk
+set_location_assignment PIN_88 -to buttons[0]
+set_location_assignment PIN_89 -to buttons[1]
+set_location_assignment PIN_90 -to buttons[2]
+set_location_assignment PIN_91 -to buttons[3]
+set_location_assignment PIN_23 -to clk
+set_location_assignment PIN_142 -to display[0]
+set_location_assignment IOBANK_1 -to display[1]
+set_location_assignment PIN_144 -to display[2]
+set_location_assignment IOBANK_3 -to display[3]
+set_location_assignment IOBANK_2 -to display[4]
+set_location_assignment PIN_10 -to display[5]
+set_location_assignment IOBANK_7 -to display[6]
+set_location_assignment PIN_11 -to display[7]
+set_location_assignment PIN_143 -to lcd_enable
+set_location_assignment PIN_141 -to lcd_rs
+set_location_assignment PIN_138 -to lcd_rw
+set_location_assignment PIN_84 -to leds[0]
+set_location_assignment PIN_85 -to leds[1]
+set_location_assignment PIN_86 -to leds[2]
+set_location_assignment PIN_87 -to leds[3]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

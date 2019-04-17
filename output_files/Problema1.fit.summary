@@ -1,11 +1,11 @@
-Fitter Status : Successful - Wed Apr 10 22:42:34 2019
+Fitter Status : Successful - Wed Apr 17 09:11:10 2019
 Quartus Prime Version : 16.1.2 Build 203 01/18/2017 SJ Lite Edition
 Revision Name : problema1
 Top-level Entity Name : problema1
 Family : Cyclone IV E
 Device : EP4CE6E22C8
 Timing Models : Final
-Total logic elements : 1,730 / 6,272 ( 28 % )
+Total logic elements : 1,733 / 6,272 ( 28 % )
     Total combinational functions : 1,617 / 6,272 ( 26 % )
     Dedicated logic registers : 931 / 6,272 ( 15 % )
 Total registers : 931

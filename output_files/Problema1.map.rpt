@@ -1,5 +1,5 @@
 Analysis & Synthesis report for problema1
-Wed Apr 10 22:42:22 2019
+Wed Apr 17 09:10:54 2019
 Quartus Prime Version 16.1.2 Build 203 01/18/2017 SJ Lite Edition
 
 
@@ -190,7 +190,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Apr 10 22:42:22 2019       ;
+; Analysis & Synthesis Status        ; Successful - Wed Apr 17 09:10:54 2019       ;
 ; Quartus Prime Version              ; 16.1.2 Build 203 01/18/2017 SJ Lite Edition ;
 ; Revision Name                      ; problema1                                   ;
 ; Top-level Entity Name              ; problema1                                   ;
@@ -3827,7 +3827,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:04     ;
+; Top            ; 00:00:06     ;
 +----------------+--------------+
 
 
@@ -3837,7 +3837,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.2 Build 203 01/18/2017 SJ Lite Edition
-    Info: Processing started: Wed Apr 10 22:41:36 2019
+    Info: Processing started: Wed Apr 17 09:09:54 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off problema1 -c problema1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -4127,7 +4127,7 @@ Info (12128): Elaborating entity "altera_reset_controller" for hierarchy "arqt:a
 Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "arqt:arq|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1" File: D:/Users/victo/Desktop/Arquivos/GitHub/SD-Prob1/arqt/synthesis/submodules/altera_reset_controller.v Line: 208
 Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "arqt:arq|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1" File: D:/Users/victo/Desktop/Arquivos/GitHub/SD-Prob1/arqt/synthesis/submodules/altera_reset_controller.v Line: 220
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2019.04.10.22:42:03 Progress: Loading sldcbc818cf/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2019.04.17.09:10:28 Progress: Loading sldcbc818cf/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -4166,10 +4166,10 @@ Info (21057): Implemented 2024 device resources after synthesis - the final reso
     Info (21061): Implemented 1855 logic cells
     Info (21064): Implemented 144 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 4906 megabytes
-    Info: Processing ended: Wed Apr 10 22:42:22 2019
-    Info: Elapsed time: 00:00:46
-    Info: Total CPU time (on all processors): 00:01:23
+    Info: Peak virtual memory: 4918 megabytes
+    Info: Processing ended: Wed Apr 17 09:10:54 2019
+    Info: Elapsed time: 00:01:00
+    Info: Total CPU time (on all processors): 00:01:40
 
 
 +------------------------------------------+

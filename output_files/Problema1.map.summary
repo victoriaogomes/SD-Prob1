@@ -1,4 +1,4 @@
-Analysis & Synthesis Status : Successful - Wed Apr 17 09:10:54 2019
+Analysis & Synthesis Status : Successful - Tue Apr 23 13:40:10 2019
 Quartus Prime Version : 16.1.2 Build 203 01/18/2017 SJ Lite Edition
 Revision Name : problema1
 Top-level Entity Name : problema1
@@ -7,7 +7,7 @@ Total logic elements : 1,806
     Total combinational functions : 1,613
     Dedicated logic registers : 939
 Total registers : 939
-Total pins : 20
+Total pins : 19
 Total virtual pins : 0
 Total memory bits : 76,800
 Embedded Multiplier 9-bit elements : 0

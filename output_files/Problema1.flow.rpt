@@ -1,5 +1,5 @@
 Flow report for problema1
-Wed Apr 17 09:11:23 2019
+Tue Apr 23 13:40:53 2019
 Quartus Prime Version 16.1.2 Build 203 01/18/2017 SJ Lite Edition
 
 
@@ -41,18 +41,18 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed Apr 17 09:11:16 2019       ;
+; Flow Status                        ; Successful - Tue Apr 23 13:40:45 2019       ;
 ; Quartus Prime Version              ; 16.1.2 Build 203 01/18/2017 SJ Lite Edition ;
 ; Revision Name                      ; problema1                                   ;
 ; Top-level Entity Name              ; problema1                                   ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE6E22C8                                 ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 1,733 / 6,272 ( 28 % )                      ;
+; Total logic elements               ; 1,739 / 6,272 ( 28 % )                      ;
 ;     Total combinational functions  ; 1,617 / 6,272 ( 26 % )                      ;
 ;     Dedicated logic registers      ; 931 / 6,272 ( 15 % )                        ;
 ; Total registers                    ; 931                                         ;
-; Total pins                         ; 20 / 92 ( 22 % )                            ;
+; Total pins                         ; 19 / 92 ( 21 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 76,800 / 276,480 ( 28 % )                   ;
 ; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                              ;
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/17/2019 09:09:56 ;
+; Start date & time ; 04/23/2019 13:38:48 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; problema1           ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +-------------------------------------+--------------------------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+--------------------------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 93181009264021.155550299515972                         ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 110073158896957.155603752706968                        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                                      ; --            ; --          ; --         ;
 ; MISC_FILE                           ; arqt/synthesis/../arqt.cmp                             ; --            ; --          ; --         ;
@@ -101,11 +101,11 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:55     ; 1.0                     ; 4918 MB             ; 00:01:36                           ;
-; Fitter                    ; 00:00:14     ; 1.1                     ; 5545 MB             ; 00:00:18                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 4696 MB             ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:06     ; 1.2                     ; 4796 MB             ; 00:00:05                           ;
-; Total                     ; 00:01:18     ; --                      ; --                  ; 00:02:02                           ;
+; Analysis & Synthesis      ; 00:01:14     ; 1.0                     ; 4902 MB             ; 00:01:29                           ;
+; Fitter                    ; 00:00:23     ; 1.0                     ; 5273 MB             ; 00:00:17                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 4698 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:06     ; 1.1                     ; 4768 MB             ; 00:00:04                           ;
+; Total                     ; 00:01:45     ; --                      ; --                  ; 00:01:52                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -114,20 +114,20 @@ agreement for further details.
 +---------------------------+------------------+------------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +---------------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis      ; DESKTOP-HO88OKO  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter                    ; DESKTOP-HO88OKO  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler                 ; DESKTOP-HO88OKO  ; Windows 10 ; 10.0       ; x86_64         ;
-; TimeQuest Timing Analyzer ; DESKTOP-HO88OKO  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis      ; DESKTOP-LPC7J05  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                    ; DESKTOP-LPC7J05  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; DESKTOP-LPC7J05  ; Windows 10 ; 10.0       ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-LPC7J05  ; Windows 10 ; 10.0       ; x86_64         ;
 +---------------------------+------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off problema1 -c problema1
-quartus_fit --read_settings_files=off --write_settings_files=off problema1 -c problema1
-quartus_asm --read_settings_files=off --write_settings_files=off problema1 -c problema1
-quartus_sta problema1 -c problema1
+quartus_map --read_settings_files=on --write_settings_files=off Problema1 -c problema1
+quartus_fit --read_settings_files=off --write_settings_files=off Problema1 -c problema1
+quartus_asm --read_settings_files=off --write_settings_files=off Problema1 -c problema1
+quartus_sta Problema1 -c problema1
 
 
 

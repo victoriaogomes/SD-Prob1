@@ -6,7 +6,6 @@ buttons[1] => arqt:arq.buttons_export[1]
 buttons[2] => arqt:arq.buttons_export[2]
 buttons[3] => arqt:arq.buttons_export[3]
 lcd_rs <= arqt:arq.lcd_rs_writeresponsevalid_n
-lcd_rw <= arqt:arq.lcd_rw_writeresponsevalid_n
 display[0] <= arqt:arq.lcd_display_readdata[0]
 display[1] <= arqt:arq.lcd_display_readdata[1]
 display[2] <= arqt:arq.lcd_display_readdata[2]

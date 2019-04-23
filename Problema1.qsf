@@ -70,7 +70,6 @@ set_location_assignment PIN_7 -to display[6]
 set_location_assignment PIN_11 -to display[7]
 set_location_assignment PIN_143 -to lcd_enable
 set_location_assignment PIN_141 -to lcd_rs
-set_location_assignment PIN_138 -to lcd_rw
 set_location_assignment PIN_84 -to leds[0]
 set_location_assignment PIN_85 -to leds[1]
 set_location_assignment PIN_86 -to leds[2]

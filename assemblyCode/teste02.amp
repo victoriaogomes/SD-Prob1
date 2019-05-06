@@ -2,7 +2,7 @@
     <architecture>Nios II</architecture>
     <system>
         <system_info filepath="true">../arqt.sopcinfo</system_info>
-        <system_sof filepath="true">../output_files/problema1.sof</system_sof>
+        <system_sof filepath="true">../output_files/Problema1.sof</system_sof>
         <system_jdi filepath="true"/>
         <cable>USB-Blaster [USB-0]</cable>
         <processor>nios2_gen2_0</processor>
@@ -12,7 +12,7 @@
     <program>
         <type>Assembly Program</type>
         <source_files>
-            <source_file filepath="true">ProjetoNios.s</source_file>
+            <source_file filepath="true">lcd.s</source_file>
         </source_files>
         <options>
             <start_symbol>_start</start_symbol>

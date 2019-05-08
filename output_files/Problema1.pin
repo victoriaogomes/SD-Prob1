@@ -152,14 +152,14 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : 80        :        :                   :      
 VCCIO5                       : 81        : power  :                   : 2.5V    : 5         :                
 GND                          : 82        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 83        :        :                   :         : 5         :                
-leds[0]                      : 84        : output : 2.5 V             :         : 5         : Y              
-leds[1]                      : 85        : output : 2.5 V             :         : 5         : Y              
-leds[2]                      : 86        : output : 2.5 V             :         : 5         : Y              
-leds[3]                      : 87        : output : 2.5 V             :         : 5         : Y              
-buttons[0]                   : 88        : input  : 2.5 V             :         : 5         : Y              
-buttons[1]                   : 89        : input  : 2.5 V             :         : 5         : Y              
-buttons[2]                   : 90        : input  : 2.5 V             :         : 6         : Y              
-buttons[3]                   : 91        : input  : 2.5 V             :         : 6         : Y              
+leds[3]                      : 84        : output : 2.5 V             :         : 5         : Y              
+leds[2]                      : 85        : output : 2.5 V             :         : 5         : Y              
+leds[1]                      : 86        : output : 2.5 V             :         : 5         : Y              
+leds[0]                      : 87        : output : 2.5 V             :         : 5         : Y              
+buttons[3]                   : 88        : input  : 2.5 V             :         : 5         : Y              
+buttons[2]                   : 89        : input  : 2.5 V             :         : 5         : Y              
+buttons[1]                   : 90        : input  : 2.5 V             :         : 6         : Y              
+buttons[0]                   : 91        : input  : 2.5 V             :         : 6         : Y              
 CONF_DONE                    : 92        :        :                   :         : 6         :                
 VCCIO6                       : 93        : power  :                   : 2.5V    : 6         :                
 MSEL0                        : 94        :        :                   :         : 6         :                

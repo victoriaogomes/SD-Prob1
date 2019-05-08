@@ -4,9 +4,11 @@
 .global _start
 
 _start:
+	movia r2, switches # Acho que isso é para pegar os endereços dos leds e switches
+	movia r3, leds
+	call turn_led_off
 	call set_constants
 	call initialize_lcd
-
 
 # r8 -> delay de 15ms
 # r9 -> delay de 4.1ms
@@ -74,7 +76,7 @@ initialize_lcd:
 
 	call delay_0_053ms # Delay de 0.53ms
 
-	movia r16, 0x0E # Código para ligar o LCD
+	movia r16, 0x0C # Código para ligar o LCD
 	call delay_0_1ms # Acabou inicialização do LCD
 	custom 0, r23, r17, r16 # Enviando o código para ligar o LCD
 
@@ -84,7 +86,6 @@ initialize_lcd:
 	call delay_4_1ms # Delay de 4.1ms
 
 	call state_zero
-	# call leds_playing
 
 
 
@@ -119,7 +120,7 @@ delay_0_053ms:
 	addi r11, r0, 0 # Zera o registrador r11
 	ret # Retorna para a rotina que chamou essa label
 
-line_one:
+line_one: # Muda o cursor do display para a primeira linha
 	movia r17, 0x0 # Mudando PINRS para envio de instruções
 	addi r27, r27, -4
 	stw r31, 0(r27)
@@ -133,7 +134,7 @@ line_one:
 	addi r27, r27, 4
 	ret
 
-line_two:
+line_two: # Muda o cursor do display para a segunda linha
 	movia r17, 0x0 # Mudando PINRS para envio de instruções
 	addi r27, r27, -4
 	stw r31, 0(r27)
@@ -147,7 +148,7 @@ line_two:
 	addi r27, r27, 4
 	ret
 
-line_three:
+line_three: # Muda o cursor do LCD para o terceira linha
 	movia r17, 0x0 # Mudando PINRS para envio de instruções
 	addi r27, r27, -4
 	stw r31, 0(r27)
@@ -161,7 +162,7 @@ line_three:
 	addi r27, r27, 4
 	ret
 
-line_four:
+line_four: # Muda o cursor do lcd para a quarta linha do display
 	movia r17, 0x0 # Mudando PINRS para envio de instruções
 	addi r27, r27, -4
 	stw r31, 0(r27)
@@ -175,100 +176,98 @@ line_four:
 	addi r27, r27, 4
 	ret
 
-leds_playing:
-	movia r2, switches
-	movia r3, leds
-	LOOP: 
-		ldbio r4, 0(r2)
-		stbio r4, 0(r3)
-		br LOOP
-
 
 
 # ASCII: M=0x4d  E=0x45  N=0x4e  U=0x55  0=0x30 1=0x31 2=0x32 3=0x33 4=0x34 -=0x2D >=0x3E
 
 state_zero: # Estado inicial (Todas as labels 'state' possuem lógica parecida então só vou comentar essa)
-	call clear_lcd
+	movia r19, 0x0
+	call clear_lcd # limpa a tela do display
 
-	call line_one
+	call line_one # chama a função para ir para a linha inicial
 
-	movia r2, switches # Acho que isso é para pegar os endereços dos leds e swirches
-	movia r3, leds
-
-	call write_arrow #desenha uma seta na opção selecionada
+	call write_arrow # desenha uma seta na opção selecionada
 
 	call write_menu # função que escreve literalmente "MENU"
 	movia r16, 0x30 # Move o caractere "0" para r16
 	call write # chama a função que escreve no lcd o que está em r16
-	call line_two # função que supostamente pula uma linha
+	call line_two # função que joga o cursor do lcd para a segunda linha
 
-	call write_menu 
+	call shift_write
+	call write_menu # Escreve a palavra "MENU"
 	movia r16, 0x31 # Caractere "1"
-	call write
-	call line_three
+	call write # Chama a função para escrever o que está no registrador r16
+	call line_three # função que joga o cursor do lcd para a terceira linha
 
-	call write_menu
+	call shift_write
+	call write_menu # Escreve a palavra "MENU"
 	movia r16, 0x32 # Caractere "2"
-	call write
-	call line_four
+	call write # escreve o que estiver no registrador r16
+	call line_four # joga o cursor do lcd na quarta linha
 
-	call write_menu
+	call shift_write
+	call write_menu # Escreve a palavra "MENU"
 	movia r16, 0x33 # Caractere "3"
-	call write
-	call write
+	call write # escreve o caractere armazenado em r16
+	call write # repete a escrita pois o display tem mania e apagar o ultimo caractere
 
 	call loop_zero # chama a label que contém o loop que irá esperar por comandos dos botões
 
-state_one: 
-	call clear_lcd
+state_one: # Segundo estado da máquina, as quatro primeiras opções do display com a segunda sendo destacada
+	movia r19, 0x1
+	call clear_lcd # limpa o display
 
-	call line_one
+	call line_one # move o cursor para a primeira linha
 
-	call write_menu
+	call shift_write
+	call write_menu # Escreve a palavra "MENU"
 	movia r16, 0x30 # Caractere "0"
-	call write
-	call line_two
+	call write # escreve o valor movido para r16
+	call line_two # move o cursor para a segunda linha
 
-	call write_arrow
-
-	call write_menu
+	call write_arrow # escreve a seta que seleciona o menu
+	call write_menu # Escreve a palavra "MENU"
 	movia r16, 0x31 # Caractere "1"
-	call write
-	call line_three
+	call write # escreve o valor armazenado em r16
+	call line_three # move o cursor para a terceira linha
 
-	call write_menu
+	call shift_write
+	call write_menu # Escreve a palavra "MENU"
 	movia r16, 0x32 # Caractere "2"
-	call write
-	call line_four
-	
+	call write # escreve o valor armazenado em r16
+	call line_four # move o cursor para a quarta linha
 
-	call write_menu
+	call shift_write
+	call write_menu # Escreve a palavra "MENU"
 	movia r16, 0x33 # Caractere "3"
+	call write # escreve o valor armazendo no registrador de r16
 	call write
-	call write
-	
 
 	call loop_one
 
 state_two:
+	movia r19, 0x2
+	call clear_lcd # limpa o display
 	call line_one
+	call shift_write
 	call write_menu
 	movia r16, 0x30 # Caractere "0"
 	call write
 	call line_two
 
+	call shift_write
 	call write_menu
 	movia r16, 0x31 # Caractere "1"
 	call write
 	call line_three
 
 	call write_arrow
-
 	call write_menu
 	movia r16, 0x32 # Caractere "2"
 	call write
 	call line_four
 
+	call shift_write
 	call write_menu
 	movia r16, 0x33 # Caractere "3"
 	call write
@@ -277,19 +276,23 @@ state_two:
 	call loop_two
 
 state_three:
+	movia r19, 0x3
 	call clear_lcd
 
 	call line_one
+	call shift_write
 	call write_menu
 	movia r16, 0x30 # Caractere "0"
 	call write
 	call line_two
 
+	call shift_write
 	call write_menu
 	movia r16, 0x31 # Caractere "1"
 	call write
 	call line_three
 
+	call shift_write
 	call write_menu
 	movia r16, 0x32 # Caractere "2"
 	call write
@@ -301,23 +304,27 @@ state_three:
 	movia r16, 0x33 # Caractere "3"
 	call write
 	call write
-	
+
 	call loop_three
 
 state_four:
+	movia r19, 0x4
 	call clear_lcd
 
 	call line_one
+	call shift_write
 	call write_menu
 	movia r16, 0x31 # Caractere "1"
 	call write
 	call line_two
 
+	call shift_write
 	call write_menu
 	movia r16, 0x32 # Caractere "2"
 	call write
 	call line_three
 
+	call shift_write
 	call write_menu
 	movia r16, 0x33 # Caractere "3"
 	call write
@@ -334,7 +341,7 @@ state_four:
 
 # ------------------------------------------------------- labels de loop
 loop_zero:
-	movia r18, 0x8 # move o valor 8 para r18. r18 é usado para acender o led correspondente a opção do menu
+	movia r18, 0x7 # move o valor 8 para r18. r18 é usado para acender o led correspondente a opção do menu
 	ldbio r4, 0(r2) # carrega o valor do button em r4 (acho)
 
 	movia r15, 0x7 # usa o registrador r15 para carregar os valores que serão comparados para branch
@@ -346,8 +353,8 @@ loop_zero:
 	br loop_zero # caso seja apertado uma combinação errada, ele volta a esperar
 
 loop_one:
-	movia r18, 0x4
-	ldbio r18, 0(r2)
+	movia r18, 0xB
+	ldbio r4, 0(r2)
 
 	movia r15, 0x7
 	beq r4, r15, state_two
@@ -361,7 +368,7 @@ loop_one:
 	br loop_one
 
 loop_two:
-	movia r18, 0x2
+	movia r18, 0xD
 	ldbio r4, 0(r2)
 
 	movia r15, 0x7
@@ -376,7 +383,7 @@ loop_two:
 	br loop_two
 
 loop_three:
-	movia r18, 0x1
+	movia r18, 0xE
 	ldbio r4, 0(r2)
 
 	movia r15, 0x7
@@ -390,7 +397,7 @@ loop_three:
 	br loop_three
 
 loop_four:
-	movia r18, 0x3
+	movia r18, 0xC
 	ldbio r4, 0(r2)
 
 	movia r15, 0xB
@@ -401,19 +408,25 @@ loop_four:
 
 	br loop_four
 
-
 # --------------------------------------------------------
 leds_on: # label para acender um led
-	addi r27, r27, -4
-	stw r31, 0(r27)
 	stbio r18, 0(r3)
 	movia r15, 0xE
+	call write_doll
 	led_loop:
 		ldbio r4, 0(r2)
 	 	bne r4, r15, led_loop
-	ldw r31, 0(r27)
-	addi r27, r27, 4
-	ret
+	call turn_led_off
+	movia r20, 0x0
+	beq r19, r20, state_zero	
+	movia r20, 0x1
+	beq r19, r20, state_one
+	movia r20, 0x2
+	beq r19, r20, state_two
+	movia r20, 0x3
+	beq r19, r20, state_three
+	movia r20, 0x4
+	beq r19, r20, state_four
 
 write: # função para escrever no LCD o valor do registrador r16
 	addi r27, r27, -4
@@ -423,9 +436,22 @@ write: # função para escrever no LCD o valor do registrador r16
 	ldw r31, 0(r27)
 	addi r27, r27, 4
 	ret
+shift_write:
+	addi r27, r27, -4
+	stw r31, 0(r27)
+	movia r16, 0x20 # Dá um espaço no que tá escrito no Display
+	call write
+
+	movia r16, 0x20 # Dá um espaço no que tá escrito no Display
+	call write
+	ldw r31, 0(r27)
+	addi r27, r27, 4
+	ret
+
 write_menu: # função para escrever "MENU"
 	addi r27, r27, -4
 	stw r31, 0(r27)
+
 	movia r16, 0x4D # Caractere "M"
 	call write
 
@@ -465,5 +491,80 @@ write_arrow: # função para escrever "->"
 	ldw r31, 0(r27)
 	addi r27, r27, 4
 	ret
+
+turn_led_off:
+	movia r18, 0XF
+	stbio r18, 0(r3)
+	ret
+
+
+write_doll:
+	addi r27, r27, -4
+	stw r31, 0(r27)
+
+	call clear_lcd
+	call line_one
+
+	movia r16, 0x14
+	call write
+
+	movia r16, 0x5E
+	call write
+
+	movia r16, 0x20
+	call write
+
+	movia r16, 0x20
+	call write
+
+	movia r16, 0x20
+	call write
+
+	movia r16, 0x20
+	call write
+
+	movia r16, 0x20
+	call write
+
+	movia r16, 0x5E
+	call write
+
+	movia r16, 0x16
+	call write
+
+	call line_two
+
+	movia r16, 0x15
+	call write
+
+	movia r16, 0x20
+	call write
+
+	movia r16, 0xC7
+	call write
+
+	movia r16, 0xC7
+	call write
+
+	movia r16, 0xC7
+	call write
+
+	movia r16, 0xC7
+	call write
+
+	movia r16, 0xC7
+	call write
+
+	movia r16, 0x20
+	call write
+
+	movia r16, 0x17
+	call write
+
+	ldw r31, 0(r27)
+	addi r27, r27, 4
+
+	ret
+
 
 .end # ----------------------------- FIM DO ARQUIVO
